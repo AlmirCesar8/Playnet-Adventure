@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://dsklfn2p3bx07"]
+
+[ext_resource type="Texture2D" uid="uid://burteeyqfbl0q" path="res://Art Assets/Background/background.jpeg" id="1_n1l1p"]
+[ext_resource type="Texture2D" uid="uid://d2t4mfd5lyrk8" path="res://Art Assets/Characters/Player/forma_base.png" id="2_ijfv4"]
+[ext_resource type="Script" path="res://scenes/player_cores.gd" id="2_rm1sw"]
+[ext_resource type="Texture2D" uid="uid://c1cbley7wtlxx" path="res://Art Assets/Characters/Player/forma_pulando.png" id="3_w02tl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e35p8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ijfv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w02tl")
+}],
+"loop": true,
+"name": &"pulo",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dki16"]
+radius = 40.0
+height = 116.0
+
+[node name="fase_cores" type="Node2D"]
+position = Vector2(11, 3)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 1278.0
+offset_bottom = 662.0
+texture = ExtResource("1_n1l1p")
+
+[node name="player" type="CharacterBody2D" parent="."]
+script = ExtResource("2_rm1sw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player"]
+position = Vector2(38, 511)
+scale = Vector2(0.424686, 0.403766)
+sprite_frames = SubResource("SpriteFrames_e35p8")
+animation = &"pulo"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2(38, 510)
+shape = SubResource("CapsuleShape2D_dki16")
