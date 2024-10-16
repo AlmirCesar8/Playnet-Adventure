@@ -1,47 +1,46 @@
 [gd_scene load_steps=7 format=3 uid="uid://dsklfn2p3bx07"]
 
 [ext_resource type="Texture2D" uid="uid://burteeyqfbl0q" path="res://Art Assets/Background/background.jpeg" id="1_n1l1p"]
-[ext_resource type="Texture2D" uid="uid://d2t4mfd5lyrk8" path="res://Art Assets/Characters/Player/forma_base.png" id="2_ijfv4"]
-[ext_resource type="Script" path="res://scenes/player_cores.gd" id="2_rm1sw"]
-[ext_resource type="Texture2D" uid="uid://c1cbley7wtlxx" path="res://Art Assets/Characters/Player/forma_pulando.png" id="3_w02tl"]
+[ext_resource type="PackedScene" uid="uid://dwcgpg2ycmwrh" path="res://Personagens/player1.tscn" id="2_aofcm"]
+[ext_resource type="PackedScene" uid="uid://bnxeiow6vpdw2" path="res://Personagens/inimigo1.tscn" id="3_cl77n"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_e35p8"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_ijfv4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_w02tl")
-}],
-"loop": true,
-"name": &"pulo",
-"speed": 5.0
-}]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2d71r"]
+size = Vector2(1283, 100)
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dki16"]
-radius = 40.0
-height = 116.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4uak"]
+size = Vector2(40, 81)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cso3s"]
+size = Vector2(39.5, 67)
 
 [node name="fase_cores" type="Node2D"]
-position = Vector2(11, 3)
+position = Vector2(5, -556)
 
 [node name="TextureRect" type="TextureRect" parent="."]
+texture_repeat = 2
 offset_left = -2.0
 offset_top = -2.0
 offset_right = 1278.0
 offset_bottom = 662.0
 texture = ExtResource("1_n1l1p")
 
-[node name="player" type="CharacterBody2D" parent="."]
-script = ExtResource("2_rm1sw")
+[node name="player" parent="." instance=ExtResource("2_aofcm")]
+position = Vector2(38, 502)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player"]
-position = Vector2(38, 511)
-scale = Vector2(0.424686, 0.403766)
-sprite_frames = SubResource("SpriteFrames_e35p8")
-animation = &"pulo"
+[node name="inimigo1" parent="." instance=ExtResource("3_cl77n")]
+position = Vector2(1026, 556)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-position = Vector2(38, 510)
-shape = SubResource("CapsuleShape2D_dki16")
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(635, 610)
+
+[node name="chão" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1.5, 0)
+shape = SubResource("RectangleShape2D_2d71r")
+
+[node name="parede" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-120, -89.5)
+shape = SubResource("RectangleShape2D_p4uak")
+
+[node name="parede2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(421.25, -84.5)
+shape = SubResource("RectangleShape2D_cso3s")
