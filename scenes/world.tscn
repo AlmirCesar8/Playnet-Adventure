@@ -3,11 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://8n8frhu02jtc" path="res://Art Assets/Background/Sky.png" id="1_qf0kt"]
 [ext_resource type="Texture2D" uid="uid://dvbsd5lwnpfki" path="res://Art Assets/Tiles/Tiles (16x16).png" id="2_onpda"]
 [ext_resource type="PackedScene" uid="uid://dwcgpg2ycmwrh" path="res://Personagens/player1.tscn" id="3_xn2q8"]
-[ext_resource type="PackedScene" uid="uid://e5i81fpv7goo" path="res://spike.tscn" id="4_g8yyr"]
-[ext_resource type="PackedScene" uid="uid://c3qs8yf8as2co" path="res://goal.tscn" id="5_1038o"]
-[ext_resource type="PackedScene" uid="uid://buc11v2tl8hov" path="res://node_2d.tscn" id="6_adj38"]
-[ext_resource type="PackedScene" uid="uid://c4mg0vsotiswi" path="res://button.tscn" id="7_o3cys"]
-[ext_resource type="PackedScene" uid="uid://mi0gipfd4hsh" path="res://crate.tscn" id="8_v86o1"]
+[ext_resource type="PackedScene" uid="uid://e5i81fpv7goo" path="res://scenes/spike.tscn" id="4_g8yyr"]
+[ext_resource type="PackedScene" uid="uid://c3qs8yf8as2co" path="res://scenes/goal.tscn" id="5_1038o"]
+[ext_resource type="PackedScene" uid="uid://buc11v2tl8hov" path="res://scenes/node_2d.tscn" id="6_adj38"]
+[ext_resource type="PackedScene" uid="uid://c4mg0vsotiswi" path="res://scenes/button.tscn" id="7_o3cys"]
+[ext_resource type="PackedScene" uid="uid://mi0gipfd4hsh" path="res://scenes/crate.tscn" id="8_v86o1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ovfo8"]
 texture = ExtResource("2_onpda")
@@ -89,6 +89,7 @@ layer_0/tile_data = PackedInt32Array(851968, 0, 0, 851969, 65536, 0, 851970, 655
 [node name="Player" parent="." instance=ExtResource("3_xn2q8")]
 position = Vector2(55, 323)
 scale = Vector2(2, 2)
+script = null
 
 [node name="spike" parent="." instance=ExtResource("4_g8yyr")]
 position = Vector2(144, 408)
@@ -102,9 +103,12 @@ offset_left = 456.0
 offset_top = 296.0
 offset_right = 496.0
 offset_bottom = 336.0
+script = null
 
 [node name="CartesianPlane" parent="." instance=ExtResource("6_adj38")]
+script = null
 
 [node name="crate" parent="." instance=ExtResource("8_v86o1")]
 position = Vector2(248, 368)
 scale = Vector2(1.5, 1.5)
+script = null

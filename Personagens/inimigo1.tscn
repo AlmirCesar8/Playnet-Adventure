@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://bnxeiow6vpdw2"]
+[gd_scene load_steps=6 format=3 uid="uid://bnxeiow6vpdw2"]
 
 [ext_resource type="Texture2D" uid="uid://b7afikjns1y7y" path="res://Art Assets/Characters/Duck/Duck (16x16).png" id="1_f66ot"]
-[ext_resource type="Script" path="res://inimigo1.gd" id="2_8fulo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7whdm"]
 atlas = ExtResource("1_f66ot")
@@ -30,7 +29,6 @@ radius = 32.1403
 
 [node name="inimigo1" type="CharacterBody2D"]
 scale = Vector2(-1, 1)
-script = ExtResource("2_8fulo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(18, -28.5)
@@ -45,4 +43,5 @@ shape = SubResource("CircleShape2D_wl8aq")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2(16, -26)
-target_position = Vector2(-31, 0)
+target_position = Vector2(38, 0)
+collision_mask = 7

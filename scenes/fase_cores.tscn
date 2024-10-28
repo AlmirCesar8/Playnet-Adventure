@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dsklfn2p3bx07"]
+[gd_scene load_steps=9 format=3 uid="uid://dsklfn2p3bx07"]
 
 [ext_resource type="Texture2D" uid="uid://burteeyqfbl0q" path="res://Art Assets/Background/background.jpeg" id="1_n1l1p"]
 [ext_resource type="PackedScene" uid="uid://dwcgpg2ycmwrh" path="res://Personagens/player1.tscn" id="2_aofcm"]
 [ext_resource type="PackedScene" uid="uid://bnxeiow6vpdw2" path="res://Personagens/inimigo1.tscn" id="3_cl77n"]
+[ext_resource type="Script" path="res://Scripts/player_cores.gd" id="3_vy1ln"]
+[ext_resource type="Script" path="res://Scripts/inimigo1.gd" id="5_bsrs0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2d71r"]
 size = Vector2(1283, 100)
@@ -26,9 +28,11 @@ texture = ExtResource("1_n1l1p")
 
 [node name="player" parent="." instance=ExtResource("2_aofcm")]
 position = Vector2(38, 502)
+script = ExtResource("3_vy1ln")
 
 [node name="inimigo1" parent="." instance=ExtResource("3_cl77n")]
 position = Vector2(1026, 556)
+script = ExtResource("5_bsrs0")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(635, 610)
@@ -40,7 +44,9 @@ shape = SubResource("RectangleShape2D_2d71r")
 [node name="parede" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-120, -89.5)
 shape = SubResource("RectangleShape2D_p4uak")
+one_way_collision_margin = 10.0
 
 [node name="parede2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(421.25, -84.5)
 shape = SubResource("RectangleShape2D_cso3s")
+one_way_collision_margin = 10.0
