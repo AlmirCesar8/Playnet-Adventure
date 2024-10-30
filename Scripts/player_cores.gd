@@ -20,8 +20,10 @@ func _physics_process(delta):
 	# Movimento lateral usando as setas do teclado
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = speed  # Move para a direita
+		$AnimatedSprite2D.flip_h = false #rotação personagem de acordo com a direção
 	elif Input.is_action_pressed("ui_left"):
 		velocity.x = -speed  # Move para a esquerda
+		$AnimatedSprite2D.flip_h = true
 
 	# Pular se a tecla de pulo for pressionada e o personagem estiver no chão
 	if is_on_ground and Input.is_action_just_pressed("ui_select"):

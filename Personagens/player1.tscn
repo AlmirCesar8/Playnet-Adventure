@@ -1,6 +1,5 @@
 [gd_scene load_steps=17 format=3 uid="uid://dwcgpg2ycmwrh"]
 
-[ext_resource type="Script" path="res://player_cores.gd" id="1_wbp3w"]
 [ext_resource type="Texture2D" uid="uid://c53qpoxqoylpu" path="res://Art Assets/Characters/Player/Piscando.png" id="2_qvrrc"]
 [ext_resource type="Texture2D" uid="uid://dyvjdj884udwv" path="res://Art Assets/Characters/Player/pulo.png" id="3_u8nbp"]
 
@@ -98,12 +97,16 @@ animations = [{
 radius = 40.0
 height = 116.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_61ay8"]
+radius = 44.0
+height = 118.0
+
 [node name="player" type="CharacterBody2D"]
-position = Vector2(-7, -50)
-script = ExtResource("1_wbp3w")
-metadata/_edit_group_ = true
+position = Vector2(-6, -52)
+collision_mask = 22
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+light_mask = 5
 position = Vector2(4, -2)
 scale = Vector2(1.40625, 1.625)
 sprite_frames = SubResource("SpriteFrames_e35p8")
@@ -114,6 +117,15 @@ position = Vector2(4, -5)
 shape = SubResource("CapsuleShape2D_dki16")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(5, -5)
 limit_left = 0
 limit_top = -550
 limit_bottom = 70
+
+[node name="hurtbox" type="Area2D" parent="."]
+position = Vector2(4, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
+position = Vector2(1, -1)
+shape = SubResource("CapsuleShape2D_61ay8")
+debug_color = Color(0.99999, 0, 0.0935918, 0.42)

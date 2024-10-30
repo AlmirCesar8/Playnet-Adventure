@@ -1,7 +1,7 @@
 extends CharacterBody2D  # Usamos CharacterBody2D para controlar o movimento do inimigo.
 
 # Variáveis principais
-var speed = 200  # Velocidade do inimigo
+var speed = 50  # Velocidade do inimigo
 var direction = Vector2(-1, 0)  # Direção inicial (indo para a esquerda)
 var gravity = 500  # Gravidade aplicada ao inimigo
 
@@ -11,12 +11,16 @@ var gravity = 500  # Gravidade aplicada ao inimigo
 
 # Função que é chamada a cada frame
 func _physics_process(delta):
+	
 	# Aplicar gravidade constante no inimigo
 	velocity.y += gravity * delta
 
 	# Movimento horizontal na direção atual
 	velocity.x = direction.x * speed
-
+	
+	# Move o inimigo e lida com colisões
+	move_and_slide()
+	
 	# Se o RayCast2D detectar uma colisão, inverte a direção
 	if wall_ray.is_colliding():
 		direction.x *= -1  # Inverte a direção horizontal
@@ -26,5 +30,3 @@ func _physics_process(delta):
 		sprite.flip_h = true
 	else:
 		sprite.flip_h = false
-	# Move o inimigo e lida com colisões
-	move_and_slide()
