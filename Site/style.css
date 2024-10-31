@@ -162,7 +162,7 @@ section input {
     border-radius: 1.5rem;
     /* Borda arredondada */
     /* Espaçamento abaixo dos inputs */
-    color: #45474B;
+    color: #ffff;
     /* Cor do texto */
     font-size: 1rem;
     /* Tamanho da fonte */
@@ -230,6 +230,9 @@ section button {
     /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* Sombra leve */
+    display: flex;
+    text-align: justify;
+    gap: 2%;
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -238,6 +241,10 @@ section button {
     /* Tamanho da fonte */
     color: #222831;
     /* Cor do texto */
+}
+
+.item-resultado img{
+    width: 200px;
 }
 .descricao-meta {
     color: #000000;
