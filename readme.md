@@ -1,7 +1,3 @@
-Aqui vai um exemplo de um README para o repositório do seu jogo, que é divertido, interativo e com um toque de humor. Claro, ajuste os detalhes conforme necessário, principalmente nas partes onde indico que faltam informações:
-
----
-
 # 🕹️ Playnet Adventure - O Futuro (Quase) Sem Bugs 🌌
 
 Bem-vind@ ao repositório do jogo **Playnet Adventure**! Prepare-se para uma aventura épica no ano 2708, onde tudo é digital... e um vírus maluco está tentando dominar o mundo. Mas, calma, temos o herói certo para essa missão: o lendário **Error 504**. Ele talvez não seja perfeito, mas é tudo o que temos!
