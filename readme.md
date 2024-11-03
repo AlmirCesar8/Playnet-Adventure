@@ -7,7 +7,7 @@ Aqui vai um exemplo de um README para o repositório do seu jogo, que é diverti
 Bem-vind@ ao repositório do jogo **Playnet Adventure**! Prepare-se para uma aventura épica no ano 2708, onde tudo é digital... e um vírus maluco está tentando dominar o mundo. Mas, calma, temos o herói certo para essa missão: o lendário **Error 504**. Ele talvez não seja perfeito, mas é tudo o que temos!
 
 <div align="center">
-  <img src="Site/Imagens/banner.png" alt="Banner de Playnet Adventure" width="200px">
+  <img src="Site/Imagens/banner.jpeg" alt="Banner de Playnet Adventure" width="200px">
 </div>
 
 ---
@@ -56,7 +56,7 @@ Aqui está o README atualizado com as alterações sugeridas:
 
 ## 🚀 Como Jogar
 
-1. **Baixe o jogo:** basta clicar no link do footer da página principal. Vai cair um .exe no seu computador mais rápido do que um bug sendo corrigido na última hora! [Link do Playnet Adventure](Site/Playney_Adventure.exe)
+1. **Baixe o jogo:** basta clicar no link do footer da página principal. Vai cair um .exe no seu computador mais rápido do que um bug sendo corrigido na última hora! [Link do Playnet Adventure](Site/Playnet_Adventure.exe)
 
 2. **Inicie o jogo:** abra o `.exe`, espere um pouco (prometemos que o Error 504 não estará no processo de inicialização) e mergulhe no mundo de 2708.
 
