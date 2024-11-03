@@ -14,9 +14,16 @@ let dados = [
     },
 
     {
-        nome: "  ",
-        descricao: "  ",
-        tags: "  ",
-        foto: "  ",
+        nome: "Fase 1",
+        descricao: "As fases do jogo são centradas na matemática, a primeira fase utiliza um plano cartesiano gerado por vetores. Essa mecânica proporciona uma experiência interativa onde o jogador deve descobrir a função associada a cada puzzle. O cenário apresenta uma série de caixas que precisam ser movidas para áreas específicas, as quais definem uma função do primeiro grau. Esta função é a solução do enigma, e ao resolvê-la, o jogador desbloqueia uma plataforma que o levará ao final da fase ou o permitirá avançar para a próxima etapa o jogo.<br> Os controles de movimentação são intuitivos: para mover o personagem para a direita ou para a esquerda, podem ser usados as teclas 'a' e 'd' ou as setas direcionais. O personagem pode pular utilizando tanto a seta para cima quanto a tecla de espaço ou o 'w'. Além disso, o jogador pode movimentar as caixas apenas através da movimentação do seu próprio personagem, criando uma interação dinâmica entre os elementos do jogo. No cenário, há também um botão com a inscrição 'FX'. Quando clicado, esse botão exibe ou oculta a malha do plano cartesiano, permitindo que o jogador visualize melhor a estrutura do ambiente e ajude na resolução dos desafios. Essa funcionalidade é crucial, pois a malha serve como uma referência visual que facilita a compreensão das relações matemáticas envolvidas nos puzzles, tornando a experiência de aprendizado mais envolvente e acessível. Com cada fase, o jogador não apenas se diverte, mas também aprimora suas habilidades matemáticas de forma lúdica e prática.",
+        tags: "Como jogar, tutorial, manual",
+        foto: "funções.png",
+    },
+
+    {
+        nome: "Fase 2",
+        descricao: "Na segunda fase de matemática, o cenário é reduzido e ambientado em um barco. O jogador interage com o ambiente e também com um sprite do matemático brasileiro Malba Tahan, que oferece um novo desafio. Ao interagir com esse personagem, o jogador é redirecionado para um mini game que simula uma batalha naval no círculo trigonométrico. O tabuleiro é adaptado para ser redondo, funcionando de maneira semelhante ao clássico jogo de batalha naval, onde são feitos 'tiros' na água e nos barcos. O tabuleiro também é construído a partir de vetores, apresentando linhas e células que facilitam a aplicação das regras do jogo. Quando o jogador dispara na água, a saída é exibida na engine Godot. Se o jogador atingir um barco ou uma parte dele, isso também será registrado no output. O mini game termina quando o jogador destrói todos os barcos, mantendo a essência do jogo de batalha naval tradicional, mas incorporando elementos matemáticos de forma divertida e educativa. <br> Dessa forma, cada fase oferece uma experiência única, permitindo que o jogador aprenda e se divirta ao mesmo tempo, desenvolvendo tanto o raciocínio matemático quanto suas habilidades estratégicas em um ambiente interativo.",
+        tags: "Como jogar, tutorial, manual",
+        foto: "naval.webp",
     },
 ]

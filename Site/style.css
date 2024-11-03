@@ -34,6 +34,10 @@ nav a:hover, footer a:hover {
 
 /* Pagina principal */
 
+html {
+    scroll-behavior: smooth;
+  }
+
 header {
     display: flex;
     align-items: center;

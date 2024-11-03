@@ -49,7 +49,7 @@ function pesquisar() {
             `;
     }
     if (!resultado) {
-      resultado = '<div class= "item-erro"><h2>Nada foi encontrado</h2></div>';
+      resultado = '<div class="item-erro"><h2>Nada foi encontrado</h2></div>';
     }
     // Atribui o HTML gerado à seção de resultados
     section.innerHTML = resultado;
