@@ -3,7 +3,7 @@
 Bem-vind@ ao repositório do jogo **Playnet Adventure**! Prepare-se para uma aventura épica no ano 2708, onde tudo é digital... e um vírus maluco está tentando dominar o mundo. Mas, calma, temos o herói certo para essa missão: o lendário **Error 504**. Ele talvez não seja perfeito, mas é tudo o que temos!
 
 <div align="center">
-  <img src="Site/Imagens/banner.jpeg" alt="Banner de Playnet Adventure" width="200px">
+  <img src="Site/Imagens/banner.jpeg" alt="Banner de Playnet Adventure" width="400px">
 </div>
 
 ---
@@ -52,7 +52,7 @@ Aqui está o README atualizado com as alterações sugeridas:
 
 ## 🚀 Como Jogar
 
-1. **Baixe o jogo:** basta clicar no link do footer da página principal. Vai cair um .exe no seu computador mais rápido do que um bug sendo corrigido na última hora! [Link do Playnet Adventure](Site/Playnet_Adventure.exe)
+1. **Baixe o jogo:** basta clicar no link do footer da página principal. Vai cair um .exe no seu computador mais rápido do que um bug sendo corrigido na última hora! [Link do Playnet Adventure](Site/Playnet_Adventure.exe) ou acesse o [Site](https://playnet-adventure.vercel.app/) e veja alguns detalhes e histórias, além de ter o link de dowloand lá também.
 
 2. **Inicie o jogo:** abra o `.exe`, espere um pouco (prometemos que o Error 504 não estará no processo de inicialização) e mergulhe no mundo de 2708.
 
@@ -68,17 +68,21 @@ Aqui está o README atualizado com as alterações sugeridas:
 
 Esse projeto foi desenvolvido por um grupo incrível de pessoas, cada uma responsável por trazer um pouco de mágica e uma pitada de sanidade a este jogo caótico.
 
-- **[Almir Cesar]** - (Site e parte da lógica)
-- **[Fábio Benjamin]** - (Desing do personagem e história)
-- **[Lucas Guidi]** - (Lógica)
-- **[Thiago Pereira]** - (Lógica)
-- **[Vitor Bueno]** - (Desing do jogo e história)
+- **Almir Cesar** - (Site e parte da lógica)
+- **Fábio Benjamin** - (Desing do personagem e história)
+- **Lucas Guidi** - (Lógica)
+- **Thiago Pereira** - (Lógica)
+- **Vitor Bueno** - (Desing do jogo e história)
 
 ## 🖼️ Screenshots do Jogo
 
 Quer ver o jogo em ação antes de baixar? Aqui vão algumas imagens do que espera por você!
 
-*Adicione screenshots bacanas do jogo em ação!*
+  <div align="center" padding="">
+    <img src="Art Assets/Background/CenÃ_Â¡rio quase completo 2 (1).png" alt="Background de Playnet Adventure" width="200px">
+    <img src="Site/Imagens/funções.png" alt="Fase 1 de Playnet Adventure" width="200px" padding: 50px;>
+    <img src="Art Assets/Background/CenÃ_Â¡rio quase completo 3.2-3.png.png" alt="Background 2 de Playnet Adventure" width="200px">
+  </div>
 
 ---
 
