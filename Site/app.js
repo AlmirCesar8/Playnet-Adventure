@@ -44,7 +44,7 @@ function pesquisar() {
                 <h2>${dado.nome}</h2>
                 <p>${dado.descricao}</p>
               </div>
-              <img src="imagens/${dado.foto}" alt="${dado.nome}">
+              <img src="Imagens/${dado.foto}" alt="${dado.nome}">
             </div>
             `;
     }
