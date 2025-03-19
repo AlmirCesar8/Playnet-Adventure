@@ -1,9 +1,11 @@
 extends Button
 
-# Referência ao nó do plano cartesiano (vai ser mostrado e escondido)
-@onready var cartesian_plane = get_node("../CartesianPlane")
 
-func _on_pressed():
-	# Mostra ou esconde o plano cartesiano
-	cartesian_plane.visible = !cartesian_plane.visible
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
 	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass

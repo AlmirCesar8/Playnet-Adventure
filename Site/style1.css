@@ -1,0 +1,357 @@
+/* Cores */
+
+body {
+    background-color: #6936c1;
+    color: #070606;
+}
+
+header, nav, footer {
+    background-color: #7E57C2;
+}
+
+header h1, nav a, .section1 h2, footer a, footer h2 {
+    color: #34008d;
+}
+
+nav a:hover, footer a:hover {
+    background-color: #B39DDB;
+    color: black;
+}
+
+.section1, .item-resultado, .item-erro {
+    background-color: #784ac9;
+}
+
+.section2 button {
+    background-color: #ad8ee2;
+    color: #080000;
+}
+
+.descricao-meta {
+    color: #BDBDBD;
+}
+
+
+/* Pagina principal */
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 20vh;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    height: 9vh;
+}
+
+.lupa {
+    width: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 20vh;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+nav a:hover {
+    transition: 0.3s;
+    color: black;
+}
+
+nav a.no-hover:hover {
+    transition: 90s;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.section1 {
+    margin-top: 4vh;
+    width: 200vh;
+    text-align: justify;
+    display: flex;
+    gap: 10vh;
+    padding: 1%;
+}
+
+.div1 img {
+    width: 300px;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 3%;
+}
+
+.div11 img {
+    width: 200px;
+}
+
+.div11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 3%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+footer a:hover {
+    transition: 0.3s;
+    color: black;
+}
+
+
+/* parte da pagina de pesquisa */
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section input {
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    color: #ffff;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #5D3A9B;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+.item-erro {
+    min-width: 40%;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    min-width: 40%;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    text-align: justify;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: #222831;
+}
+
+.item-resultado img {
+    width: 30%;
+    height: 30%;
+}
+
+.descricao-meta {
+    color: #000000;
+    margin: 0.5rem 0;
+}
+
+/* funcão de fazer a pesquisa rolar */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.search-container img {
+    position: relative;
+    right: 42px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.search-container input {
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px white;
+    border-top: 2px solid rgb(109, 2, 112);
+    border-left: 2px solid rgb(61, 1, 66);
+    border-right: 2px solid rgb(156, 0, 91);
+    border-bottom: 2px solid rgb(51, 9, 55);
+    outline: none;
+    border-radius: 20px;
+    width: 5%;
+    opacity: 0%;
+    transition: all 1s;
+    padding: 5px;
+    padding-left: 5px;
+}
+
+.search-container p {
+    position: relative;
+    left: -19px;
+    transition: all 0.2s 0.2s ease-in-out;
+    width: fit-content;
+    flex-wrap: nowrap;
+}
+
+.search-container p:last-child {
+    left: -45px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .section1 {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .div1, .div11 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 10vh;
+    }
+
+    .search-container input {
+        width: 80%;
+        opacity: 100%;
+    }
+    .item-resultado {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    section input {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+    }
+
+    .item-resultado, .item-erro {
+        min-width: 90%;
+    }
+
+    .search-container {
+        font-size: 20px;
+    }
+
+    .search-container input {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        gap: 1px;
+    }
+    nav a {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.2rem;
+    }
+
+    .search-container img {
+        height: 40px;
+    }
+
+    .search-container input {
+        font-size: 14px;
+    }
+}

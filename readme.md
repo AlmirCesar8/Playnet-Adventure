@@ -31,16 +31,13 @@ Aqui vai uma pequena navegação pelo que você encontrará neste repositório:
 
 ```
 📦 Playnet-Adventure
-├── 📁 art assets             # Aqui estão os arquivos visuais (sprites, backgrounds, efects etc.)
-├── 📁 scripts                # Código GD Script que move o Error 504 e que faz as fases acontecerem
-├── 📁 personagens            # O Error 504 e os principasi inimigos estão aqui
-├── 📁 scenes                 # Aqui você pode encontrar as fases dos jogos e alguns objetos 
-└── 📁 site                   # A página web, com os arquivos JS e CSS, além da página auxiliar
-└── ⚙️ Playnet Adventure.exe  # Executável para Windows.
+├── 📁 Art assets             # Aqui estão os arquivos visuais (sprites, backgrounds, efects etc.)
+├── 📁 Scripts                # Código GD Script que move o Error 504 e que faz as fases acontecerem
+├── 📁 Builds                 # Versões do Jogo
+    └── ⚙️ Playnet Adventure.exe  # Executável para Windows.
+├── 📁 Scenes                 # Aqui você pode encontrar as fases dos jogos e alguns objetos 
+└── 📁 Site                   # A página web, com os arquivos JS e CSS, além da página auxiliar
 ```
-
-Aqui está o README atualizado com as alterações sugeridas:
-
 ---
 
 ## 🖥️ Requisitos do Sistema
