@@ -3,6 +3,7 @@
 body {
     background-color: #6936c1;
     color: #070606;
+    align-items: center;
 }
 
 header, nav, footer {
