@@ -95,10 +95,10 @@ main {
 
 .section1 {
     margin-top: 4vh;
-    width: 200vh;
+    width: 150vh;
     text-align: justify;
     display: flex;
-    gap: 10vh;
+    gap: 5vh;
     padding: 1%;
 }
 
@@ -155,7 +155,7 @@ footer a:hover {
 }
 
 section input {
-    width: 30rem;
+    width: 50rem;
     border: none;
     padding: 1rem;
     border-radius: 1.5rem;
@@ -177,7 +177,7 @@ section button {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem;
+    width: 120vh;
     height: 46vh;
     overflow-y: auto;
     margin-top: 1rem;
@@ -271,6 +271,14 @@ section button {
 }
 
 /* Media Queries para Responsividade */
+@media (max-width: 1300px) {
+    .section1 {
+        width: 100vh;
+    }
+    .resultados-pesquisa {
+        width: 100vh;
+    }
+}
 @media (max-width: 1200px) {
     .section1 {
         flex-direction: column;
@@ -339,7 +347,7 @@ section button {
         gap: 1px;
     }
     nav a {
-        padding: 10px;
+        padding: 5px;
         font-size: 0.9rem;
     }
 
